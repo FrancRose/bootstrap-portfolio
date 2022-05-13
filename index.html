@@ -17,7 +17,7 @@
 
 
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
     <!-- NAVBAR START=============================================================================== -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white ">
         <div class="container">
@@ -33,7 +33,11 @@
                     <ul class="navbar-nav">
                         <!-- Navbar Item---------------------------------------------------------- -->
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <!-- Navbar Item---------------------------------------------------------- -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
                         </li>
                         <!-- Navbar Item---------------------------------------------------------- -->
                         <li class="nav-item">
@@ -65,13 +69,16 @@
 
                 </div>
             </div>
+            <!-- .row------------------------------ -->
         </div>
+        <!-- .container--------------------------- -->
     </section>
     <!-- HERO SECTION END=================================================================================== -->
 
     <!-- SERVICES SECTION================================================================================= -->
-    <section id="services">
+    <section id="services" class="text-center">
         <div class="container">
+            <!-- Start Services Text---------------------------------------------------- -->
             <div class="row">
                 <div class="col-12 section-intro text-center">
                     <h1>Our Services</h1>
@@ -80,13 +87,90 @@
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos possimus repellendusab,    soluta doloribus dignissimos,<br> 
                     numquam est quis ullam non odit officiis quod dolor praesentium vitae similique nihil dicta. Alias.</p>
+                </div>
+            </div>
+            <!-- .row End Services Text ------------------------------------------------- -->
+
+            <!-- Start Services Cards---------------------------------------------------- -->
+            <div class="row">
+                <!-- Start Individual Card 1----------------------------------------------  -->
+                <div class="col-md-4">
+                    <div class="service">
+                        <div class="service-image">
+                            <img src="assets/panda-portrait.jpg" alt="">
+                            <div class="icon"><i class="bx bxs-window-alt bx-lg bx-tada" ></i></div>
+                        </div> <!-- Service Image -->
+
+                        <h5 class="mt-5 pt-4">Site Builders</h5>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptates voluptatum magnam perspiciatis ut autem obcaecati vero totam. Sed dicta doloribus corrupti excepturi veniam reprehenderit impedit placeat numquam. Voluptate, aliquam!</p>
+                    </div>
+                    <!-- .service------------------------------------------------------- -->
+                </div>
+                <!-- .col-md-4 END INDIVIDUAL CARD 1-------------------------------------- -->
+
+                <!-- Start Individual Card 2----------------------------------------------  -->
+                <div class="col-md-4">
+                    <div class="service">
+                        <div class="service-image">
+                            <img src="assets/panda-portrait.jpg" alt="">
+                            <div class="icon"><i class="bx bx-line-chart bx-lg bx-fade-up" ></i></div>
+                        </div> <!-- Service Image                                         -->
+
+                        <h5 class="mt-5 pt-4">SEO Management</h5>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptates voluptatum magnam perspiciatis ut autem obcaecati vero totam. Sed dicta doloribus corrupti excepturi veniam reprehenderit impedit placeat numquam. Voluptate, aliquam!</p>
+                    </div>
+                    <!-- .service------------------------------------------------------- -->
+                </div>
+                <!-- .col-md-4 END INDIVIDUAL CARD 2-------------------------------------- -->
+
+                <!-- Start Individual Card 3----------------------------------------------  -->
+                <div class="col-md-4">
+                    <div class="service">
+                        <div class="service-image">
+                            <img src="assets/panda-portrait.jpg" alt="">
+                            <div class="icon"><i class="bx bx-user-plus bx-lg bx-burst" ></i></div>
+                        </div> <!-- Service Image                                         -->
+
+                        <h5 class="mt-5 pt-4">Social Media & Ads</h5>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptates voluptatum magnam perspiciatis ut autem obcaecati vero totam. Sed dicta doloribus corrupti excepturi veniam reprehenderit impedit placeat numquam. Voluptate, aliquam!</p>
+                    </div>
+                    <!-- .service------------------------------------------------------- -->
+                </div>
+                <!-- .col-md-4 END INDIVIDUAL CARD 3-------------------------------------- -->
+
+            </div>
+            <!-- .row End Services Cards------------------------------------------------ -->
+        </div>
+        <!-- .container------------------------------------------------- -->
+    </section>
+    <!-- END SERVICES SECTION============================================================================= -->
+
+    <!-- START CONTACT SECTION============================================================================ -->
+    <section id="contact" class="bg-cover-2" style="background-image: url(assets/vintage-phones.jpg);">
+        <div class="overlay"></div>
+        <div class="container text-white text-center">
+            <div class="row">
+                <div class="col-12 section-intro text-center">
+                    <h1>Get In Touch</h1>
+
+                    <div class="divider"></div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos possimus repellendusab,    soluta doloribus dignissimos,<br> 
+                    numquam est quis ullam non odit officiis quod dolor praesentium vitae similique nihil dicta. Alias.</p>
+
+                        <h4 class="button-title">Reach out and we'll get back to you asap!</h4>
+                        <a href="#" class="contact-button">Contact</a>
 
                 </div>
             </div>
+            <!-- .row------------------------------ -->
         </div>
+        <!-- .container--------------------------- -->
     </section>
-
-
+    <!-- END CONTACT SECTION============================================================================== -->
 
 
 

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
 /* Defaults--------------------------- */
+:root {
+    --linear-gradient-solid: linear-gradient(rgba(0, 224, 254, 1), rgba(15, 6, 254, 1));
+}
+
 body {
     font-family: "Roboto", sans-serif;
     line-height: 1.8;
@@ -19,6 +23,10 @@ a {
     transition: all 0.4s ease;
     font-weight: 800;
 }
+
+img {
+    width: 100%;
+}
 /* Navbar Styling */
 .navbar {
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0);
@@ -27,6 +35,12 @@ a {
 .navbar-brand img {
     width: 150px;
     height: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+    background: -webkit-linear-gradient(#00e0feb3, #1107feb3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 /* Hero Section */
 section {
@@ -42,7 +56,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 224, 254, 0.7), rgba(17, 7, 254, 0.7));
+    background: linear-gradient(rgba(17, 7, 254, 0.7),rgba(0, 224, 254, 0.7));
     z-index: -1;
 }
 
@@ -59,7 +73,7 @@ section {
     justify-content: center;
     align-items: center;
 }
-
+/* BUTTON STYLES */
 .btn-main {
     padding: 14px 22px;
     background: linear-gradient(#00e0feb3, #1107feb3);
@@ -73,6 +87,18 @@ section {
     color: #fff;
     transform: translateY(5px);
 }
+
+.contact-button {
+    width: 85px;
+    height: 60px;
+    background: linear-gradient(#00e0feb3, #1107feb3);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 100px;
+}
+
 /* SERVICES SECTION */
 .section-intro {
     margin-bottom: 40px;
@@ -81,6 +107,44 @@ section {
 .section-intro .divider {
     height: 3px;
     width: 70px;
-    background: black;
-    margin: auto;
+    background: linear-gradient(to right, #00e0feb3, #1107feb3);
+    margin: .75rem auto;
+}
+/* SERVICES SECTION STYLE */
+.service .service-image {
+    position: relative;
+}
+
+.service .service-image .icon {
+    width: 90px;
+    height: 90px;
+    background: var(--linear-gradient-solid);
+    color: #fff;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.service .service-image .icon i {
+    font-size: 36px;
+}
+/* CONTACT SECTION STYLE */
+#contact {
+    min-height: 50vh;
+}
+
+.bg-cover-2 {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.button-title {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }

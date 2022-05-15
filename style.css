@@ -210,6 +210,40 @@ h4 {
 }
 
 /* Portfolio styling */
+.work-hero {
+    margin-top: 7rem;
+    background-size: cover;
+    min-height: 75vh;
+    position: relative;
+    color: #fff;
+}
+
+.color-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .6);
+    height: 100%;
+    width: 100%;
+}
+
+.singleCol{
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.work-title {
+    font-size: 4rem;
+}
+
+
 .work-cards {
     margin-top: 5rem;
 }
+
+.top-row {
+    margin-bottom: 1rem;
+}
+
+.bottom-row {
+    margin-bottom: 3rem;
+}
+

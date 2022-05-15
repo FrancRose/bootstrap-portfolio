@@ -207,5 +207,9 @@ h4 {
 .footer .copyright p {
     font-size: 1.3rem;
     text-shadow: 1px ;
+}
 
+/* Portfolio styling */
+.work-cards {
+    margin-top: 5rem;
 }
